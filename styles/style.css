@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -47,18 +49,6 @@ ol {
   white-space: nowrap;
 }
 
-.page {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-  inline-size: 1200px;
-  block-size: 100%;
-}
-
 .content {
   display: flex;
   gap: 30px;
@@ -70,10 +60,6 @@ ol {
   position: relative;
   height: 298px;
   overflow-y: scroll;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__details {
@@ -109,7 +95,7 @@ ol {
 .title {
   padding-bottom: 26px;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -135,7 +121,7 @@ ol {
 .content__video-card-title {
   padding: 2px;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
@@ -146,7 +132,7 @@ ol {
 .content__video-card-description {
   padding: 2px;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -172,8 +158,9 @@ ol {
 
 .result__video-container {
   position: relative;
-  margin-bottom: 11px;
-  inline-size: 711px;
+  margin-bottom: 16px;
+  width: 711px;
+  height: 386px;
 }
 
 .search-form {
@@ -183,7 +170,6 @@ ol {
 }
 
 .search-form__fieldset {
-  position: relative;
   display: inline-flex;
   flex-direction: column;
   gap: 5px;
@@ -193,6 +179,7 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
+  line-height: normal;
 }
 
 .search-form__textfield {
@@ -215,7 +202,6 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  color: rgba(255, 255, 255, 0.7);
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
@@ -275,13 +261,12 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
   border: 1px solid #fff;
 }
 
 .button {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -289,6 +274,7 @@ ol {
   text-align: center;
   background-color: transparent;
   cursor: pointer;
+  height: 34px;
   inline-size: 100%;
 }
 
@@ -306,25 +292,10 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .more-button {
   height: 34px;
   border: 1px solid #fff;
-}
-
-.more-button:active {
-  background-color: #545050;
-}
-
-.more-button:hover {
-  text-decoration: underline;
-}
-
-.more-button:focus {
-  outline: none;
-}
-
-.more-button:focus-visible {
-  outline: 1px solid #fff;
 }
