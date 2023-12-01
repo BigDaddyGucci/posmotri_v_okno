@@ -266,7 +266,7 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
-  position: absolute;
+  display: block;
   width: 15px;
   height: 15px;
   background-color: #FFF;
